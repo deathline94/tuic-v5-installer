@@ -14,7 +14,7 @@ Automate the installation and management of the tuic-server on your Linux system
 
 To install tuic-server using the tuic-installer, run the following command:
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/tuic-installer/main/tuic-installer.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/deathline94/tuic-v5-installer/main/tuic-installer.sh)
 ```
 💬 Usage:
 
