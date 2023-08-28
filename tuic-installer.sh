@@ -20,7 +20,7 @@ echo ""
 
 # Check for and install required packages
 install_required_packages() {
-    REQUIRED_PACKAGES=("curl" "jq" "openssl" "uuidgen")
+    REQUIRED_PACKAGES=("curl" "jq" "openssl" "uuid-runtime")
     for pkg in "${REQUIRED_PACKAGES[@]}"; do
         if ! command -v $pkg &> /dev/null; then
             apt-get update > /dev/null 2>&1
