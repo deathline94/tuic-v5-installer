@@ -67,7 +67,7 @@ if [ -d "/root/tuic" ]; then
             systemctl restart tuic
             public_ip=$(curl -s https://api.ipify.org)
             echo -e "\nNekoBox/NekoRay URL:"
-            echo "tuic://$current_uuid:$new_password@$public_ip:$new_port/?congestion_control=bbr&alpn=h3,spdy/3.1&udp_relay_mode=native&allow_insecure=1"
+            echo "tuic://$current_uuid:$new_password@$public_ip:$new_port/?congestion_control=bbr&alpn=h3,spdy/3.1&udp_relay_mode=quic&allow_insecure=1"
             echo ""
             exit 0
             ;;
